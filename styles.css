@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 50vw;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 15px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+main .heading {
+  font-family: "Young Serif", serif;
+  font-weight: 300;
+  color: hsl(14, 45%, 36%);
+}
+main div:not(.preparation-desc, :last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+main div:not(.preparation-desc, :last-child) p {
+  font-family: "outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  text-align: justify;
+  font-size: 16px;
+}
+main img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.heading-part {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.heading-part .recipe-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 300;
+  color: black;
+}
+.heading-part .preparation-desc {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.heading-part .preparation-desc h3 {
+  color: hsl(332, 51%, 32%);
+  font-family: "outfit", serif;
+}
+.heading-part .preparation-desc ul {
+  padding-left: 25px;
+}
+.heading-part .preparation-desc ul li {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.ingredients ul {
+  padding-left: 25px;
+}
+.ingredients ul li {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.instructions ol {
+  margin-left: 25px;
+}
+.instructions ol li {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.nutrition p {
+  margin: 15px 0;
+  font-size: 16px;
+}
+.nutrition table {
+  width: 100%;
+}
+.nutrition table tr {
+  height: 40px;
+}
+.nutrition table tr td {
+  padding: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  font-size: 16px;
+}
+.nutrition table tr .qty {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+.nutrition table tr .no-border {
+  border: none;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  main div {
+    margin: 0 20px;
+  }
+  main img {
+    border-radius: 0;
+  }
+  footer {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
